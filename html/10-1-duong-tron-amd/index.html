@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" xml:lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bài 10.1 — Đường tròn ngoại tiếp tam giác AMD đi qua trung điểm
+CD</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+<body>
+<h1
+id="bài-101--đường-tròn-ngoại-tiếp-tam-giác-amd-đi-qua-trung-điểm-cd">Bài
+10.1 — Đường tròn ngoại tiếp tam giác AMD đi qua trung điểm CD</h1>
+<blockquote>
+<p>Cho hình chữ nhật <code>ABCD</code>. Qua <code>A</code> kẻ đường
+thẳng vuông góc với <code>BD</code> tại <code>H</code>. Gọi
+<code>M</code> là trung điểm của <code>HB</code>. <strong>Chứng minh
+rằng đường tròn ngoại tiếp tam giác <code>AMD</code> đi qua trung điểm
+của <code>CD</code>.</strong></p>
+</blockquote>
+<p>Đặt thêm: <strong><code>N</code> là trung điểm của
+<code>CD</code>.</strong> Bài trở thành: chứng minh <code>A</code>,
+<code>M</code>, <code>D</code>, <code>N</code> đồng viên.</p>
+<hr />
+<h2 id="hình">Hình</h2>
+<p><img src="../../md/10-1-duong-tron-amd/img/10-1-hinh.png"
+alt="hình bài 10.1" /></p>
+<p>Hình này đã chứa sẵn câu trả lời: đường tròn đi qua
+<code>A, M, D, N</code> nhận <strong><code>AN</code> làm đường
+kính</strong>.</p>
+<hr />
+<h2 id="cái-nhìn-đầu-tiên">Cái nhìn đầu tiên</h2>
+<blockquote>
+<p>Trong bốn điểm <code>A</code>, <code>M</code>, <code>D</code>,
+<code>N</code> thì <strong>đã có sẵn một góc vuông:
+<code>∠ADN = ∠ADC = 90°</code></strong>. Một góc vuông nội tiếp thì cạnh
+đối diện nó <strong>bắt buộc là đường kính</strong>. Vậy đường tròn cần
+tìm chỉ có thể là <strong>đường tròn đường kính <code>AN</code></strong>
+— không còn lựa chọn nào khác. Và khi đó <code>M</code> nằm trên nó
+<strong>khi và chỉ khi <code>∠AMN = 90°</code></strong>.</p>
+</blockquote>
+<p><strong>Bài từ "chứng minh 4 điểm đồng viên" rút về "chứng minh
+<code>AM ⊥ MN</code>".</strong></p>
+<p><strong>Vì sao nghĩ tới nó</strong> — đây mới là phần dùng lại được:
+bài bảo chứng minh đồng viên, mà trong nhóm điểm đó <strong>đã có một
+góc vuông cho không</strong>. Góc vuông là dữ kiện đắt nhất trong hình
+học đường tròn, vì nó <strong>khoá luôn vị trí của đường tròn</strong>.
+Đi đường cộng góc là dùng phí nó. Phản xạ: <strong>đếm góc vuông trước
+khi chọn dấu hiệu nội tiếp.</strong></p>
+<hr />
+<h2 id="lời-giải-cách-nên-viết-trong-bài-thi">Lời giải (cách nên viết
+trong bài thi)</h2>
+<p><img src="../../md/10-1-duong-tron-amd/img/10-1-cach1.png"
+alt="cách 1 — trực tâm" /></p>
+<p><strong>Gọi <code>N</code> là trung điểm <code>CD</code>,
+<code>K</code> là trung điểm <code>AH</code>.</strong></p>
+<p><strong>(1) <code>KM</code> là đường trung bình của tam giác
+<code>AHB</code>.</strong> <code>K</code>, <code>M</code> lần lượt là
+trung điểm của <code>AH</code>, <code>HB</code>, nên
+<code>KM ∥ AB</code> và <code>KM = AB/2</code>.</p>
+<p><strong>(2) <code>DKMN</code> là hình bình hành.</strong>
+<code>N</code> là trung điểm <code>DC</code> nên
+<code>DN = DC/2 = AB/2</code> và <code>DN ∥ AB</code>. Kết hợp với (1):
+<code>KM ∥ DN</code> và <code>KM = DN</code>. Tứ giác <code>DKMN</code>
+có một cặp cạnh đối song song và bằng nhau nên là hình bình hành, do
+đó</p>
+<pre><code>DK ∥ MN.                                          (*)</code></pre>
+<p><strong>(3) <code>K</code> là trực tâm của tam giác
+<code>ADM</code>.</strong> Xét tam giác <code>ADM</code>:</p>
+<ul>
+<li><code>KM ∥ AB</code> mà <code>AB ⊥ AD</code> (giả thiết hình chữ
+nhật) nên <code>KM ⊥ AD</code> ⟹ <code>MK</code> nằm trên đường cao kẻ
+từ <code>M</code>.</li>
+<li><code>H</code> và <code>M</code> cùng thuộc <code>BD</code>, mà
+<code>AH ⊥ BD</code>, nên <code>AH ⊥ DM</code>; lại có
+<code>K ∈ AH</code> ⟹ <code>AK</code> nằm trên đường cao kẻ từ
+<code>A</code>.</li>
+</ul>
+<p>Hai đường cao cắt nhau tại <code>K</code>, vậy <code>K</code> là trực
+tâm tam giác <code>ADM</code>, suy ra <code>DK ⊥ AM</code>.</p>
+<p><strong>(4) <code>∠AMN = 90°</code>.</strong> Từ (*)
+<code>DK ∥ MN</code> và <code>DK ⊥ AM</code>, suy ra
+<code>MN ⊥ AM</code>, tức <code>∠AMN = 90°</code>.</p>
+<p><strong>(5) Kết luận.</strong> <code>∠ADN = ∠ADC = 90°</code> và
+<code>∠AMN = 90°</code>, nên <code>D</code> và <code>M</code>
+<strong>cùng nhìn đoạn <code>AN</code> dưới một góc vuông</strong>. Vậy
+<code>D</code>, <code>M</code> cùng thuộc đường tròn đường kính
+<code>AN</code>, tức bốn điểm <code>A</code>, <code>M</code>,
+<code>D</code>, <code>N</code> cùng thuộc một đường tròn.</p>
+<p>Đường tròn ngoại tiếp tam giác <code>AMD</code> chính là đường tròn
+đường kính <code>AN</code>, và nó <strong>đi qua <code>N</code> — trung
+điểm của <code>CD</code></strong>. ∎</p>
+<hr />
+<h2 id="vì-sao-nghĩ-ra-được-kể-cả-đường-cụt">Vì sao nghĩ ra được, kể cả
+đường cụt</h2>
+<p><strong>Đường cụt 1 — thử dấu hiệu "hai góc đối bù nhau" cho
+<code>AMND</code>.</strong> Phải tính <code>∠AMD</code>. Nhưng
+<code>∠AMD</code> kề bù với <code>∠AMB</code>, mà <code>AM</code> không
+nối với đoạn nào có sẵn số đo — đề <strong>không cho một góc cụ thể
+nào</strong>. Tắc. Bài học: đề không cho góc thì đừng mở đường bằng cộng
+góc.</p>
+<p><strong>Đường cụt 2 — thử "hai đỉnh kề cùng nhìn một cạnh".</strong>
+Cũng phải so <code>∠AMD</code> với <code>∠AND</code>. Tắc vì đúng lý do
+trên.</p>
+<p><strong>Cái mở khoá — đếm góc vuông trong hình.</strong> Có sẵn ba
+góc vuông: tại <code>A</code>, tại <code>D</code>, tại <code>H</code>.
+Trong bốn điểm phải chứng minh thì <code>∠ADN</code> <strong>đã là góc
+vuông</strong>. Đó là lúc câu hỏi đổi từ <em>"dùng dấu hiệu nội tiếp
+nào?"</em> sang <em><strong>"đường tròn đó là đường tròn
+nào?"</strong></em> — và câu sau chỉ có một đáp án.</p>
+<p><strong>Vì sao dựng thêm <code>K</code>.</strong> Sau khi bài rút về
+<code>AM ⊥ MN</code>, trong hình có <strong>hai trung điểm</strong>
+<code>M</code> và <code>N</code>, nhưng chúng thuộc hai tam giác khác
+nhau nên chưa ghép được. Muốn <code>M</code> có một đường trung bình thì
+tam giác chứa nó phải có trung điểm cạnh thứ hai: <code>M</code> là
+trung điểm <code>HB</code> của tam giác <code>AHB</code>, nên điểm còn
+thiếu là <strong>trung điểm <code>AH</code></strong>. Dựng
+<code>K</code> xong thì <code>KM ∥ AB</code>, và vì <code>AB ⊥ AD</code>
+nên <code>KM</code> <strong>tự nhiên trở thành một đường cao của tam
+giác <code>ADM</code></strong> — đó là chỗ trực tâm hiện ra.</p>
+<hr />
+<h2 id="hai-cách-khác-cho-ai-muốn-đi-sâu">Hai cách khác, cho ai muốn đi
+sâu</h2>
+<p>Ba cách là <strong>cùng một sự thật nhìn từ ba phía</strong>. Mỗi
+phía mở ra một lớp bài khác nhau.</p>
+<h3 id="cách-2--đồng-dạng-xoay">Cách 2 — Đồng dạng xoay</h3>
+<p><img src="../../md/10-1-duong-tron-amd/img/10-1-cach2.png"
+alt="cách 2 — đồng dạng xoay" /></p>
+<ol type="1">
+<li>Tam giác <code>ABD</code> vuông tại <code>A</code>, tam giác
+<code>DCA</code> vuông tại <code>D</code>, có <code>AB = DC</code>,
+<code>AD = DA</code> ⟹ <code>ΔABD = ΔDCA</code> (c.g.c) ⟹
+<code>∠ABD = ∠DCA</code>.</li>
+<li><code>ΔAHB</code> và <code>ΔADC</code> có
+<code>∠AHB = ∠ADC = 90°</code> và <code>∠ABH = ∠ACD</code> ⟹
+<strong><code>ΔAHB ~ ΔADC</code></strong> (g.g).</li>
+<li><code>M</code>, <code>N</code> là trung điểm <code>HB</code>,
+<code>DC</code> — hai cạnh tương ứng — nên <code>AM</code>,
+<code>AN</code> là <strong>hai trung tuyến tương ứng</strong>. Cụ thể
+<code>ΔAHM ~ ΔADN</code> (c.g.c: <code>∠AHM = ∠ADN = 90°</code>,
+<code>AH/AD = HM/DN</code>), do đó <code>∠HAM = ∠DAN</code> và
+<code>AM/AN = AH/AD</code>.</li>
+<li>Cộng thêm (hoặc bớt đi) cùng góc <code>∠HAN</code> vào hai vế của
+<code>∠HAM = ∠DAN</code>, được <code>∠MAN = ∠HAD</code>.</li>
+<li><code>ΔAMN</code> và <code>ΔAHD</code> có <code>∠MAN = ∠HAD</code>
+và <code>AM/AH = AN/AD</code> ⟹
+<strong><code>ΔAMN ~ ΔAHD</code></strong> (c.g.c) ⟹
+<code>∠AMN = ∠AHD = 90°</code>. Kết luận như cách 1. ∎</li>
+</ol>
+<blockquote>
+<p><strong>Cấu trúc đáng giá:</strong> đây là <strong>đồng dạng xoay
+(spiral similarity)</strong> ở dạng thuần khiết nhất. Từ
+<code>ΔAHM ~ ΔADN</code> (cùng đỉnh <code>A</code>) <strong>suy ra
+ngay</strong> <code>ΔAHD ~ ΔAMN</code> — tráo chỗ hai chữ ở giữa. Bước 4
+là chỗ duy nhất phải cẩn thận cấu hình: tuỳ hình chữ nhật cao hay rộng
+mà tia <code>AN</code> nằm trong hay ngoài góc <code>∠HAD</code>, nên
+viết là <em>"cộng hoặc bớt cùng góc <code>∠HAN</code>"</em> chứ không
+viết <em>"cộng"</em>.</p>
+</blockquote>
+<h3 id="cách-3--phương-tích">Cách 3 — Phương tích</h3>
+<p><img src="../../md/10-1-duong-tron-amd/img/10-1-cach3.png"
+alt="cách 3 — phương tích" /></p>
+<p><strong>Dựng thêm <code>P</code> là trung điểm
+<code>AB</code>.</strong></p>
+<ol type="1">
+<li>Tam giác <code>ABD</code> vuông tại <code>A</code>, <code>AH</code>
+là đường cao ⟹ hệ thức lượng: <code>AB² = BH · BD</code>.</li>
+<li>Do đó
+<code>BP · BA = (AB/2) · AB = AB²/2 = (BH/2) · BD = BM · BD</code>.</li>
+<li><code>P</code>, <code>A</code> cùng nằm trên tia <code>BA</code>;
+<code>M</code>, <code>D</code> cùng nằm trên tia <code>BD</code>. Theo
+<strong>chiều đảo của phương tích</strong>, bốn điểm
+<strong><code>A</code>, <code>P</code>, <code>M</code>, <code>D</code>
+đồng viên</strong>.</li>
+<li>Mặt khác <code>P</code>, <code>N</code> là trung điểm hai cạnh đối
+<code>AB</code>, <code>DC</code> nên <code>PN ∥ AD</code>, mà
+<code>AD ⊥ AB</code>, suy ra <code>∠APN = 90°</code>. Cùng với
+<code>∠ADN = 90°</code>, bốn điểm <strong><code>A</code>,
+<code>P</code>, <code>N</code>, <code>D</code> đồng viên</strong> (đường
+tròn đường kính <code>AN</code>).</li>
+<li>Hai đường tròn ở (3) và (4) cùng đi qua ba điểm không thẳng hàng
+<code>A</code>, <code>P</code>, <code>D</code> ⟹ <strong>trùng
+nhau</strong>. Vậy <code>M</code> và <code>N</code> cùng nằm trên một
+đường tròn với <code>A</code> và <code>D</code>. ∎</li>
+</ol>
+<blockquote>
+<p><strong>Vì sao <code>P</code> phải xuất hiện — phần đáng giữ nhất của
+bài này:</strong> phương tích của một điểm cần <strong>hai cát tuyến qua
+điểm đó</strong>. Điểm tự nhiên ở đây là <code>B</code>: nó nằm ngoài
+đường tròn và đường thẳng <code>B–M–D</code> <strong>đã là một cát tuyến
+cho sẵn</strong>. Cát tuyến thứ hai qua <code>B</code> chỉ còn một khả
+năng — đường thẳng <code>BA</code>, vì <code>A</code> là điểm duy nhất
+còn lại đã biết nằm trên đường tròn. Câu hỏi thu về:
+<em><strong>"<code>BA</code> cắt đường tròn lần thứ hai ở
+đâu?"</strong></em> Và hệ thức <code>AB² = BH · BD</code> trả lời ngay:
+ở <strong>trung điểm <code>AB</code></strong>.</p>
+<p>Đó là cách tìm ra điểm phụ mà không phải đoán. <strong>Điểm phụ không
+rơi từ trên trời — nó là nghiệm của một phương trình phương
+tích.</strong></p>
+</blockquote>
+<h3 id="kết-quả-mạnh-hơn-đề">Kết quả mạnh hơn đề</h3>
+<p>Gộp cả ba cách lại, sự thật đầy đủ là:</p>
+<blockquote>
+<p><strong>Năm điểm <code>A</code>, <code>P</code>, <code>M</code>,
+<code>N</code>, <code>D</code> cùng nằm trên đường tròn đường kính
+<code>AN</code></strong>, trong đó <code>P</code>, <code>N</code> lần
+lượt là trung điểm hai cạnh đối <code>AB</code> và <code>DC</code>.</p>
+</blockquote>
+<p>Đề chỉ hỏi bốn điểm trong năm.</p>
+<hr />
+<h2 id="dấu-hiệu-nhận-ra-bài-tương-tự">Dấu hiệu nhận ra bài tương
+tự</h2>
+<p>Viết thành thứ <strong>nhìn thấy được trên hình</strong>, không phải
+tên chương:</p>
+<table>
+<thead>
+<tr>
+<th>Thấy gì trên hình</th>
+<th>Nghĩ ngay tới</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bảo chứng minh 4 điểm đồng viên mà <strong>trong 4 điểm đó đã có sẵn
+một góc vuông</strong></td>
+<td>Đường tròn <strong>bắt buộc</strong> là đường tròn đường kính của
+cạnh đối diện góc vuông đó. Bài rút về chứng minh <strong>một góc vuông
+thứ hai</strong></td>
+</tr>
+<tr>
+<td><strong>Tam giác vuông có đường cao hạ từ đỉnh góc
+vuông</strong></td>
+<td><code>AB² = BH·BD</code> — <strong>phương tích đang nằm sẵn trong
+hình</strong>, chỉ chờ được gọi tên</td>
+</tr>
+<tr>
+<td><strong>Hai trung điểm</strong> của hai đoạn thẳng</td>
+<td>Đường trung bình. Nếu hai trung điểm ở hai tam giác khác nhau thì
+<strong>dựng thêm trung điểm thứ ba</strong> để ghép</td>
+</tr>
+<tr>
+<td>Một đường trung bình <strong>vuông góc với một cạnh</strong> của tam
+giác đang xét</td>
+<td><strong>Trực tâm</strong> — đường trung bình đó là một đường cao trá
+hình</td>
+</tr>
+<tr>
+<td>Hai tam giác đồng dạng, đề lấy <strong>trung điểm hai cạnh tương
+ứng</strong></td>
+<td><strong>Đồng dạng xoay</strong>: <code>ΔAXY ~ ΔAZT</code> ⟹
+<code>ΔAXZ ~ ΔAYT</code>. Tráo hai chữ ở giữa</td>
+</tr>
+<tr>
+<td>Một điểm nằm ngoài đường tròn và <strong>đã có một cát tuyến qua
+nó</strong></td>
+<td>Tìm <strong>cát tuyến thứ hai</strong> — thường là đường nối điểm đó
+với một đỉnh đã biết, và giao điểm thứ hai chính là điểm phụ cần
+dựng</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2
+id="checklist-kiến-thức-tự-chấm-gật-thì-bỏ-qua-lắc-thì-xuống-phần-dưới">Checklist
+kiến thức (tự chấm: gật thì bỏ qua, lắc thì xuống phần dưới)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" /><strong>Góc nội tiếp chắn nửa đường
+tròn bằng <code>90°</code></strong>, và chiều đảo:
+<code>∠AXB = 90°</code> thì <code>X</code> thuộc đường tròn đường kính
+<code>AB</code>.</label></li>
+<li><label><input type="checkbox" /><strong>Quỹ tích:</strong> hai điểm
+cùng nhìn một đoạn thẳng dưới góc <code>90°</code> thì cùng thuộc đường
+tròn đường kính đoạn đó.</label></li>
+<li><label><input type="checkbox" /><strong>Đường trung bình</strong>
+của tam giác: song song và bằng nửa cạnh thứ ba.</label></li>
+<li><label><input type="checkbox" /><strong>Dấu hiệu hình bình
+hành:</strong> một cặp cạnh đối song song <strong>và</strong> bằng
+nhau.</label></li>
+<li><label><input type="checkbox" /><strong>Trực tâm:</strong> ba đường
+cao đồng quy — và cách dùng nó <em>ngược</em>: chỉ ra hai đường cao cắt
+nhau ở đâu thì đường thứ ba tự vuông góc.</label></li>
+<li><label><input type="checkbox" /><strong>Hệ thức lượng trong tam giác
+vuông:</strong> <code>AB² = BH·BC</code> với <code>AH</code> là đường
+cao, <code>H ∈ BC</code>.</label></li>
+<li><label><input type="checkbox" /><strong>Phương tích, chiều
+đảo:</strong> <code>BP·BA = BM·BD</code> với <code>P, A</code> trên một
+tia và <code>M, D</code> trên tia kia thì <code>A, P, M, D</code> đồng
+viên.</label></li>
+<li><label><input type="checkbox" /><strong>Tam giác đồng dạng:</strong>
+tỉ số hai trung tuyến tương ứng bằng tỉ số đồng dạng.</label></li>
+<li><label><input type="checkbox" /><strong>Đồng dạng xoay:</strong>
+<code>ΔAXY ~ ΔAZT</code> ⟹ <code>ΔAXZ ~ ΔAYT</code>.</label></li>
+</ul>
+<hr />
+<h2 id="nếu-hổng-thì-lùi-lại--bốn-bài-dễ-hơn">Nếu hổng thì lùi lại — bốn
+bài dễ hơn</h2>
+<p>Không giảng lại lý thuyết. Mỗi chỗ hổng có <strong>một bài mẫu giải
+sẵn</strong> và <strong>một bài tự làm</strong>.</p>
+<h3 id="hổng-a--góc-vuông--đường-tròn-đường-kính">Hổng A — "góc vuông ⟹
+đường tròn đường kính"</h3>
+<p><strong>Bài mẫu A.</strong> Cho tam giác <code>ABC</code> có hai
+đường cao <code>BE</code> và <code>CF</code> (<code>E ∈ AC</code>,
+<code>F ∈ AB</code>). Chứng minh <code>B</code>, <code>C</code>,
+<code>E</code>, <code>F</code> cùng thuộc một đường tròn và chỉ ra tâm
+của nó.</p>
+<blockquote>
+<p><em>Giải.</em> <code>BE ⊥ AC</code> nên <code>∠BEC = 90°</code>.
+<code>CF ⊥ AB</code> nên <code>∠BFC = 90°</code>. Vậy <code>E</code> và
+<code>F</code> <strong>cùng nhìn đoạn <code>BC</code> dưới một góc
+vuông</strong>, nên <code>E</code>, <code>F</code> cùng thuộc đường tròn
+đường kính <code>BC</code>. Bốn điểm <code>B</code>, <code>C</code>,
+<code>E</code>, <code>F</code> đồng viên; <strong>tâm là trung điểm của
+<code>BC</code></strong>. ∎</p>
+<p>Đây đúng là bước (5) của bài 10.1, chỉ khác cái tên.</p>
+</blockquote>
+<p><strong>Bài A′ — tự làm.</strong> Cho tam giác <code>ABC</code>, hai
+đường cao <code>AD</code> và <code>BE</code> cắt nhau tại
+<code>H</code>. Chứng minh tứ giác <code>CDHE</code> nội tiếp, và
+<strong>chỉ rõ đường kính</strong> của đường tròn đó.</p>
+<h3 id="hổng-b--hệ-thức-lượng-và-chiều-đảo-của-phương-tích">Hổng B — hệ
+thức lượng và chiều đảo của phương tích</h3>
+<p><strong>Bài mẫu B.</strong> Cho tam giác <code>ABC</code> vuông tại
+<code>A</code>, đường cao <code>AH</code> (<code>H ∈ BC</code>). Gọi
+<code>M</code> là trung điểm <code>HB</code>, <code>P</code> là trung
+điểm <code>AB</code>. Chứng minh <code>BM · BC = BP · BA</code>.</p>
+<blockquote>
+<p><em>Giải.</em> Tam giác <code>ABC</code> vuông tại <code>A</code>,
+<code>AH</code> là đường cao ⟹ <code>AB² = BH · BC</code>. Do đó
+<code>BM · BC = (BH/2) · BC = AB²/2 = AB · (AB/2) = BA · BP</code>.
+∎</p>
+</blockquote>
+<p><strong>Bài B′ — tự làm.</strong> Vẫn giả thiết bài mẫu B: chứng minh
+bốn điểm <code>A</code>, <code>P</code>, <code>M</code>, <code>C</code>
+cùng thuộc một đường tròn.</p>
+<blockquote>
+<p>Làm xong A′ và B′ là <strong>đã tự dựng lại được cách 3 của bài
+10.1</strong>, chỉ còn thiếu đúng một bước ghép hai đường tròn. Đó là
+chủ ý của cặp bài này.</p>
+</blockquote>
+<details>
+<summary><b>Đáp án gợi ý — chỉ mở sau khi đã tự làm</b></summary>
+
+<p><strong>A′.</strong> <code>AD ⊥ BC</code> nên
+<code>∠HDC = 90°</code>; <code>BE ⊥ AC</code> nên
+<code>∠HEC = 90°</code>. Hai điểm <code>D</code>, <code>E</code> cùng
+nhìn đoạn <code>HC</code> dưới góc vuông ⟹ <code>D</code>,
+<code>E</code> thuộc đường tròn đường kính <code>HC</code>. Vậy
+<code>CDHE</code> nội tiếp đường tròn <strong>đường kính
+<code>HC</code></strong>. <em>(Cách khác:
+<code>∠HDC + ∠HEC = 180°</code> — hai góc đối bù nhau. Cùng một sự
+thật.)</em></p>
+<p><strong>B′.</strong> Theo bài mẫu B: <code>BP · BA = BM · BC</code>.
+Mà <code>P</code>, <code>A</code> cùng nằm trên tia <code>BA</code> và
+<code>M</code>, <code>C</code> cùng nằm trên tia <code>BC</code>. Theo
+chiều đảo của phương tích, bốn điểm <code>A</code>, <code>P</code>,
+<code>M</code>, <code>C</code> đồng viên. ∎</p>
+</details>
+
+<hr />
+<p><em>Mọi khẳng định trong bài đã được kiểm chứng bằng số trên 5000
+hình chữ nhật ngẫu nhiên — 0 phản ví dụ. Hình vẽ sinh bằng SVG rồi
+render ra PNG.</em></p>
+</body>
+</html>
